@@ -1,0 +1,10 @@
+services:
+  hello-service:
+    image: hello-service:latest
+    ports:
+      - "50076:50076"
+
+  api-gateway:
+    image: api-gateway:latest
+    ports:
+      - "8080:8080"
