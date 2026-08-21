@@ -37,6 +37,6 @@ func NewHelloServer() *helloServer {
 	return &helloServer{}
 }
 func (h *helloServer) SayHello(ctx context.Context, req *pb.HelloRequest) (*pb.HelloResponse, error) {
-	return &pb.HelloResponse{Message: "HI " + req.Name}, nil
+	return &pb.HelloResponse{Message: "HELLO " + req.Name}, nil
 
 }
